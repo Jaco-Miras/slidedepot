@@ -62,3 +62,7 @@ label.setfiles input[type="file"] {
   position: absolute;
   top: -1000px;
 }
+
+.MuiBox-root {
+  outline: none !important;
+}
