@@ -87,19 +87,19 @@ const Signup = () => {
   }
 
   return (
-    <>
+    <div className='w-screen h-screen grid place-items-center font-font'>
         {success ? (
             <div>
               <h1>Success!</h1>
                   <span onClick={() => navigate("/")}>Sign In</span>
             </div>
          ) : (
-          <div>
+          <div className='w-96 border border-gray-200 py-10 px-10 rounded-sm shadow-md'>
             <p ref={errRef} className={errMsg ? "errmsg" : 
             "offscreen"} aria-live="assertive">{errMsg}</p>
-            <h1>Register</h1>
-            <p>
-                already have an acount? <br />
+            <h1 className='text-3xl font-semibold mb-2'>Sign up</h1>
+            <p className='mb-5'>
+                Already have an acount? {" "}
                     <span onClick={() => navigate("/")}>Sign In</span>
             </p>
               <form onSubmit={handleSubmit}>
@@ -149,7 +149,7 @@ const Signup = () => {
                 </form>
           </div>
         )}
-    </>
+    </div>
   )
 }
 
