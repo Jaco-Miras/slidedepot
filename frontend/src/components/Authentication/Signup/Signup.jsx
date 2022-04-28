@@ -8,8 +8,6 @@ import InfoIcon from '@mui/icons-material/InfoOutlined';
 
 import axios from "@/APIService/axios";
 import Navbar from '@/components/Guest/Navbar/Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faInfoCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
 const REGISTER_URL = '/api/users/';
 
 const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
