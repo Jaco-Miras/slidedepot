@@ -81,4 +81,17 @@ class Comment(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
+<<<<<<< HEAD
         return self.commenter_name
+=======
+        return self.title
+
+class Comment(models.Model):
+    presentation = models.ForeignKey(Presentation, related_name="comments", on_delete=models.CASCADE)
+    commenter_name = models.CharField(max_length=200)
+    comment_body = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.commenter_name
+>>>>>>> 0e4b74dbfe5c43681675f4b7d7a9973061847952
